@@ -1,5 +1,6 @@
 var BlinkyDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
+  this.$node = $('<img class="happy Dancer" src="./gifs/giphy2.gif">');
   //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
 };
 

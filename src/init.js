@@ -22,6 +22,12 @@ $(document).ready(function() {
     var dancerMakerFunction = window[dancerMakerFunctionName];
     console.log('dancerMakerFunction', dancerMakerFunction);
 
+    var happyDancerMakerFunctionName = $(this).data('happy-dancer-maker-function-name');
+    console.log('dancerMakerFunctionName', happyDancerMakerFunctionName);
+
+    var happyDancerMakerFunction = window[happyDancerMakerFunctionName];
+    console.log('dancerMakerFunction', happyDancerMakerFunction);
+
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
@@ -30,6 +36,14 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+
+    var dancer2 = new happyDancerMakerFunction(
+      $("body").height() * Math.random(),
+      $("body").width() * Math.random(),
+      Math.random() * 1000
+    );
+
+    $('body').append(dancer2.$node);
   });
 });
 

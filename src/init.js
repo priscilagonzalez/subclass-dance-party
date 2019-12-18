@@ -60,3 +60,9 @@ $(document).ready(function() {
   });
 });
 
+/* Create a lineup:
+ * Create a new button called lineup
+ * Iterate over the present dancers that are showing
+ * (somehow keep track using window.dancer = [])
+ * Set a position for all present dances to aggregate
+ */

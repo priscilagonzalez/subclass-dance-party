@@ -1,19 +1,22 @@
 body, html{
   height:100%;
+
 }
 body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
   background: url(./gifs/ballroom.jpg) center/cover;
+  background-attachment: fixed;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .addHappyDancerButton, .addOldDancerButton{
   padding:5px 12px;
   float:right;
 }
+
 .topbar{
   height:32px;
   background-color: #555;
@@ -21,16 +24,16 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+
 .dancer{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
 }
 
-.dancer_position{
-  position: absolute;
-  top: 70vh;
-  left: 5vw;
-  width: 90%;
-  height: 30vh;
+img.happyDancer, img.blinkyDancer, img.oldDancer{
+  width: 120px;
+  height: auto;
+  margin-top: 430px;
+  margin-left: 150px;
 }
